@@ -1,5 +1,7 @@
 import numpy as np
+import pandas as pd
 
+{
 # a = np.array([1,3,5,7])
 # print(a, a.ndim) # 1
 
@@ -29,3 +31,17 @@ import numpy as np
 
 # linspace() : 지정된 범위 내에서 균등하게 분할된 숫자가 담긴 배열을 생성하는 함수
 # reshape() : 배열의 모양(shape)을 변경하는 메서드로, 새로운 모양에 맞게 요소들을 재배열
+}
+
+df = pd.DataFrame(
+{"a" : [4, 5, 6],"b" : [7, 8, 9],"c" : [10, 11, 12]},
+    index = [1,2,3]
+)
+print(df , end="\n\n")
+
+df = pd.DataFrame(
+    [[4,7,10],[5,8,11],[6,9,12]],
+    index = [1,2,3],
+    columns = ['a','b','c']
+)
+print(df)
