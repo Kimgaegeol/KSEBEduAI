@@ -4,14 +4,12 @@ def quick_sort(l):
     n = len(l)
     if n <= 1: return l
 
-    # x_l에 (value[0], index) 튜플을 저장
     x_l = [(value[0], i) for i, value in enumerate(l)]
 
-    pivot = x_l[n // 2][0]  # pivot 값 설정
+    pivot = x_l[n // 2][0]
 
     left, mid, right = [], [], []
 
-    # value, index로 언패킹 가능
     for value, index in x_l:
         if value < pivot:
             left.append(l[index])
