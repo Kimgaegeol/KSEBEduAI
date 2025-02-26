@@ -3,4 +3,4 @@ import pandas as pd
 import seaborn as sns
 
 titanic = sns.load_dataset('titanic')
-print(titanic)
+print(titanic.info())
